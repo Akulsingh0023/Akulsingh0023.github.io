@@ -1018,6 +1018,10 @@ button {
     line-height: 1.4;
   }
 
+  .hero__visual {
+    order: 1;   /* image ko wapas content ke baad le aayega */
+  }
+
   .hero__badge--top {
     top: 56px;
     left: 8px;
