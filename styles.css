@@ -1017,6 +1017,16 @@ button {
     white-space: normal;
     line-height: 1.4;
   }
+
+  .hero__badge--top {
+    top: 56px;
+    left: 8px;
+  }
+
+  .hero__badge--mid {
+    top: 94%;
+    right: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1050,12 +1060,18 @@ button {
     padding: 8px 10px;
   }
 
+  .hero__badge span:last-child {
+    white-space: nowrap;
+  }
+
   .hero__badge--top {
     top: 44px;
+    left: 8px;
   }
 
   .hero__badge--mid {
     top: 96%;
+    right: 8px;
   }
 
   .section {
