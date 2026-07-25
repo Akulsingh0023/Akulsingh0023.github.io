@@ -1011,3 +1011,70 @@ button {
     scroll-behavior: auto !important;
   }
 }
+/* ===== Extra responsive fixes (small phones) ===== */
+@media (max-width: 760px) {
+  .hero__role {
+    white-space: normal;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    width: calc(100% - 24px);
+  }
+
+  .hero__title {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
+
+  .hero__role {
+    font-size: 1rem;
+  }
+
+  .hero__desc {
+    font-size: 0.95rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .app-btn {
+    width: 100%;
+  }
+
+  .hero__badge {
+    font-size: 0.78rem;
+    padding: 8px 10px;
+  }
+
+  .hero__badge--top {
+    top: 44px;
+  }
+
+  .hero__badge--mid {
+    top: 96%;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .section__title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .glass-card,
+  .skill-card,
+  .project-card__body,
+  .contact-panel,
+  .form-card {
+    padding: 18px;
+  }
+
+  .timeline__year {
+    font-size: 0.85rem;
+  }
+}
