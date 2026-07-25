@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akul Singh - Personal portfolio" />
+  <title>Akul. | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="app-container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Go to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <span class="brand__mark" aria-hidden="true">A</span>
+        <span class="brand__text">Akul.</span>
+      </a>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"></button>
+
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="nav__menu" id="navMenu">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section hero" id="home">
+      <div class="app-container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="hero__eyebrow">Welcome to my universe</p>
+          <h1 class="hero__title">Hi, I'm <span class="text-gradient">Akul Singh</span></h1>
+          <p class="hero__role" aria-live="polite">
+            <span class="hero__typing" data-typewriter></span><span class="hero__typing-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__desc">
+            I build polished web experiences, ship practical full-stack products, and keep my learning grounded in real understanding rather than copy-paste shortcuts.
+          </p>
+
+          <div class="hero__actions">
+            <a class="app-btn app-btn--primary" href="#projects">View Projects</a>
+            <a class="app-btn app-btn--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__socials" aria-label="Social links">
+            <a class="social-link" href="https://github.com/Akulsingh0023" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.46-1.18-1.12-1.49-1.12-1.49-.91-.62.07-.61.07-.61 1 .07 1.52 1.04 1.52 1.04.9 1.53 2.38 1.09 2.96.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.47 9.47 0 0 1 5 0C17.51 5.36 18.35 5.63 18.35 5.63c.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:akul212006@gmail.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5A2.22 2.22 0 1 1 2.5 6.5a2.22 2.22 0 0 1 4.44 0ZM2.9 8.88h3.98V21H2.9V8.88Zm6.58 0h3.81v1.66h.05a4.18 4.18 0 0 1 3.76-2.07c4.02 0 4.76 2.64 4.76 6.07V21h-3.98v-5.28c0-1.26-.03-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.8V21H9.48V8.88Z"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero__visual reveal">
+          <span class="hero__badge hero__badge--top"><span class="hero__badge-icon" aria-hidden="true">&lt;/&gt;</span><span>Software Engineer</span></span>
+          <span class="hero__badge hero__badge--mid"><span class="hero__badge-icon" aria-hidden="true">🏆</span><span>Problem Solver</span></span>
+
+          <div class="portrait-card">
+            <div class="hero__photo-wrap">
+              <img class="hero__photo" src="assets/akul-hero.jpeg" alt="Akul portrait" data-hero-photo />
+              <div class="hero__photo-fallback" data-hero-fallback hidden>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="app-container">
+        <div class="section__head reveal">
+          <p class="section__kicker">About Me</p>
+          <h2 class="section__title">A little about how I work</h2>
+          <p class="section__subtitle">A portfolio should tell a clear story. This is the one I want to build on.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <p>
+              I'm a BCA 2026 graduate from The Study Hall College, University of Lucknow, currently looking for a fresher full-stack developer role, ideally at an early-stage startup.
+            </p>
+            <p>
+              My flagship project is a full-stack Zerodha clone built on the MERN stack with JWT auth, Razorpay payments, and an automated square-off cron job, deployed across Vercel, Render, and MongoDB Atlas. I've also built a Telegram quiz bot, a blogging platform, a bookstore app, and a food delivery app.
+            </p>
+            <p>
+              I use AI tools as a teacher rather than a ghostwriter — I want to actually understand what I ship.
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3 class="card-title">What I care about</h3>
+            <div class="contact-stack">
+              <div class="contact-row">
+                <span>01</span>
+                <p>Building products that feel polished, reliable, and genuinely useful.</p>
+              </div>
+              <div class="contact-row">
+                <span>02</span>
+                <p>Learning deeply enough to explain the code, not just ship it.</p>
+              </div>
+              <div class="contact-row">
+                <span>03</span>
+                <p>Working with teams that value curiosity, ownership, and iteration.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="app-container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Skills</p>
+          <h2 class="section__title">Glass cards with progress bars</h2>
+          <p class="section__subtitle">These animate when they scroll into view.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Frontend</h3>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>React.js</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>HTML &amp; CSS</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>JavaScript</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="80%"></div></div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Backend</h3>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>Node.js / Express</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>Python</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>JWT Auth</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="80%"></div></div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Database &amp; Tools</h3>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>MongoDB</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>Git / GitHub</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__top"><span>Docker</span><span>55%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-progress="55%"></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="app-container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Projects</p>
+          <h2 class="section__title">Selected work</h2>
+          <p class="section__subtitle">A mix of flagship work and smaller builds.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card__thumb project-card__thumb--amber">
+              <img src="assets/zerodha.png" alt="Zerodha Clone screenshot" class="project-card__img" />
+            </div>
+            <div class="project-card__body">
+              <h3>Zerodha Clone</h3>
+              <p>
+                Full-stack trading platform with JWT + bcrypt auth, live dashboard, Razorpay payments, and auto square-off via node-cron. Deployed on Vercel, Render, and MongoDB Atlas.
+              <div class="project-card__tags">
+                <span class="tag">MERN</span>
+                <span class="tag">JWT</span>
+                <span class="tag">Razorpay</span>
+                <span class="tag">node-cron</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Removed: ExamSprint Telegram Quiz Bot and Whisper of World per user request -->
+
+          <article class="project-card reveal">
+            <div class="project-card__thumb project-card__thumb--green">
+              <img src="assets/book.png" alt="Zerodha Clone screenshot" class="project-card__img" />
+            </div>
+            <div class="project-card__body">
+              <h3>Bookstore App</h3>
+              <p>
+                MERN stack bookstore with role-based content access (free vs premium), JWT authentication, and a dark/light theme toggle.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">MERN</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__thumb project-card__thumb--rose">
+                  <img src="assets/food.png" alt="Zerodha Clone screenshot" class="project-card__img" />
+            </div>
+            <div class="project-card__body">
+              <h3>Food Delivery App</h3>
+              <p>
+                Responsive food delivery site with food browsing, table reservation, client-side form validation, and a clean interactive UI.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="app-container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Education</p>
+          <h2 class="section__title">Academic background</h2>
+          <p class="section__subtitle">The core degree behind the portfolio.</p>
+        </div>
+
+        <article class="timeline reveal">
+          <div class="timeline__item education-card">
+            <span class="timeline__year">2023 – 2026</span>
+            <div>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p>Study Hall College, Lucknow<br>University of Lucknow<br>CGPA: 7.91 / 10<br>Final Semester Percentage: 80%</p>
+            </div>
+          </div>
+
+          <div class="timeline__item education-card">
+            <span class="timeline__year">2021 – 2023</span>
+            <div>
+              <h3>Higher Secondary Education (Class XII)</h3>
+              <p>Sterling Public Inter School<br>Percentage: 68.4%</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="app-container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Contact</p>
+          <h2 class="section__title">Let’s build something useful</h2>
+          <p class="section__subtitle">Two cards: one for details, one for a working contact form.</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-panel reveal">
+            <h3 class="card-title">Contact info</h3>
+            <div class="contact-stack">
+              <div class="contact-row">
+                <span>Email</span>
+                <a href="mailto:akul212006@gmail.com">akul212006@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span>Location</span>
+                <p>Lucknow, India</p>
+              </div>
+              <div class="contact-row">
+                <span>GitHub</span>
+                <a href="https://github.com/Akulsingh0023" target="_blank" rel="noreferrer">github.com/Akulsingh0023</a>
+              </div>
+              <div class="contact-row">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a>
+              </div>
+            </div>
+
+            <div class="contact-socials" aria-label="Social links">
+              <a class="contact-icon" href="https://github.com/Akulsingh0023" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.46-1.18-1.12-1.49-1.12-1.49-.91-.62.07-.61.07-.61 1 .07 1.52 1.04 1.52 1.04.9 1.53 2.38 1.09 2.96.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.47 9.47 0 0 1 5 0C17.51 5.36 18.35 5.63 18.35 5.63c.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+              <a class="contact-icon" href="mailto:akul212006@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+              </a>
+              <a class="contact-icon" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5A2.22 2.22 0 1 1 2.5 6.5a2.22 2.22 0 0 1 4.44 0ZM2.9 8.88h3.98V21H2.9V8.88Zm6.58 0h3.81v1.66h.05a4.18 4.18 0 0 1 3.76-2.07c4.02 0 4.76 2.64 4.76 6.07V21h-3.98v-5.28c0-1.26-.03-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.8V21H9.48V8.88Z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="form-card reveal">
+            <h3 class="card-title">Send a message</h3>
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/akul212006@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Portfolio message from Akul's website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <div class="field-group">
+                <label for="contactName">Name</label>
+                <input id="contactName" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field-group">
+                <label for="contactEmail">Email</label>
+                <input id="contactEmail" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" placeholder="Tell me what you want to build..." required></textarea>
+              </div>
+              <button class="app-btn app-btn--primary" type="submit">Send</button>
+              <p class="contact-form__note">This sends directly to my email inbox.</p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="app-container footer__inner">
+      <p>© <span id="year"></span> Akul Singh. All rights reserved.</p>
+    <a class="footer__top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
